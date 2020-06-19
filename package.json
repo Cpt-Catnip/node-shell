@@ -1,0 +1,22 @@
+{
+  "name": "node-shell",
+  "version": "1.0.0",
+  "description": "node-shell pair activity FSA",
+  "main": "bash.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cpt-Catnip/node-shell.git"
+  },
+  "author": "Aleks Mitrovic & Mike Koshakow",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cpt-Catnip/node-shell/issues"
+  },
+  "homepage": "https://github.com/Cpt-Catnip/node-shell#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}

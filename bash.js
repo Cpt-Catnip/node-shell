@@ -1,9 +1,7 @@
 const cat = require('./cat');
-
-const map = {
-  pwd: require("./pwd"),
-  ls: require("./ls")
-};
+const curl = require('./curl');
+const pwd = require("./pwd");
+const ls = require("./ls");
 
 // Output a prompt
 process.stdout.write("prompt > ");
@@ -14,6 +12,12 @@ process.stdin.on("data", (data) => {
 
   if (cmd[0] === 'cat') {
     cat(cmd[1]);
+  } if (cmd[0] === 'curl') {
+    curl(cmd[1]);
+  } else if(cmd[0] === 'pwd') {
+    pwd();
+  } else if(cmd[0] === 'ls') {
+    ls();
   } else {
     process.stdout.write("\nUnknown Command: " + cmd);
     process.stdout.write("\nprompt > ");
